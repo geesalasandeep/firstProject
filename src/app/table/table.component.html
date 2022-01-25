@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">countryName</th>
+        <th scope="col">capital</th>
+        <th scope="col">currency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let places1 of countrydetails; index as i" >
+        <th scope="row"> {{ i + 1 }} </th>
+        <td appChangeColor > {{places1.countryName}} </td>
+        <td> {{places1.capital}} </td>
+        <td> {{places1.currency }} </td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+  <input type="text" [(ngModel)] = "placeName" >
+  <button (click) = "sendToService()" > calldata</button>
+  <button (click) = "dat.callingFromHtml()">click to get data</button>
+
+
+

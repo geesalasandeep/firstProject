@@ -1,0 +1,9 @@
+<p>this is parent</p>
+<input type="text" [(ngModel)] = "empName" >
+
+<button (click) = toggleChild(); >click</button>
+
+<app-second *ngIf = "isChild" 
+[empName] = "empName" ></app-second>
+
+

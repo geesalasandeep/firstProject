@@ -1,0 +1,43 @@
+<h1>
+    The Park
+</h1>
+
+<label for="">customerName </label> <br>
+<input type="text" [(ngModel)] = "customerName" >
+ <br>
+
+<label for="">customerage</label><br>
+<input type="number" [(ngModel)] = "customerage">
+
+<button class="btn btn-primary" (click) = "submit()" > submit</button>
+<div *ngIf = "details"> 
+<h2>
+    These {{customerName}} are the amenities available for you
+</h2>
+
+<ul>
+    <li [ngClass] = "'success'">Food</li>
+    <li [ngClass] = "swimmingpass()" > Swimming Pool</li>
+    <li [ngClass] = "'success'" >Gym</li>
+    <li [ngClass] = " pubpass()">Pub</li>
+</ul> 
+
+</div>
+
+<h1>
+    members of park
+</h1>
+
+<ul *ngFor = "let emp of empDetails">
+    <li>
+        <h4> {{ emp.empName }} </h4>
+        <h3> {{emp.designation}} </h3>
+        <!-- <p>{{emp.empName}}</p> -->
+        <!-- <p *ngIf= "e"> this is even  </p> -->
+
+
+
+
+    </li>
+
+</ul>

@@ -1,0 +1,12 @@
+<!-- <p>parent works!</p> -->
+<div style="background-color: aqua; height: 200px; ">
+<p>this is parent</p>
+<input type="text" [(ngModel)] = "instruction"  >
+<h4> reply {{ replyfromchild }} </h4>
+
+
+</div>
+
+<app-child [getinstruction] ="instruction" (childevent) = "receivedata($event) " ></app-child>
+
+ 

@@ -1,0 +1,9 @@
+.success{
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+.failure{
+    background-color: rgb(46, 39, 11);
+    color: #4bff4b;
+}
